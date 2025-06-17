@@ -1,0 +1,45 @@
+# Docker
+.dockerignore
+docker/data/
+docker/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+# Docker
+.dockerignore
+docker/data/
+docker/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+# Docker
+.dockerignore
+docker/data/
+docker/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+# Docker
+.dockerignore
+docker/data/
+docker/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+# Docker
+.dockerignore
+docker/data/
+docker/logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp

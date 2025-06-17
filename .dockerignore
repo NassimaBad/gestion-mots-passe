@@ -1,0 +1,67 @@
+# =============================================================================
+# .dockerignore - Fichiers à exclure lors du build Docker
+# =============================================================================
+
+# Répertoires de build Maven
+target/classes/
+target/test-classes/
+target/maven-archiver/
+target/maven-status/
+target/surefire-reports/
+
+# Fichiers temporaires Maven
+target/*.original
+
+# Fichiers IDE
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Documentation et README (sauf celui de Docker)
+README.md
+docs/
+!docker/docs/
+
+# Fichiers de test
+src/test/
+target/*-tests.jar
+
+# Fichiers de configuration locaux
+*.properties.local
+config/local/
+
+# Logs locaux
+logs/
+*.log
+
+# Données de développement
+data/dev/
+data/test/
+
+# Scripts de développement
+scripts/dev/
+scripts/test/
+
+# Cache et temporaires Java
+*.class
+*.jar
+!target/*.jar
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+*~
