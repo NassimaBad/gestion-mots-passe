@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.passwordmanager.client.gui.LoginController"
+           stylesheets="@/com/passwordmanager/gui/style.css">
+
+    <VBox alignment="CENTER" spacing="20.0" styleClass="login-container">
+        <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+        </padding>
+
+        <Label text="Password Manager" styleClass="app-title" />
+        <Label text="Secure Your Digital Life" styleClass="app-subtitle" />
+
+        <GridPane hgap="10" vgap="15" alignment="CENTER" styleClass="input-grid">
+            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="form-label"/>
+            <TextField fx:id="usernameField" promptText="Enter username" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="text-field"/>
+
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1" styleClass="form-label"/>
+            <PasswordField fx:id="passwordField" promptText="Enter password" GridPane.columnIndex="1" GridPane.rowIndex="1" styleClass="password-field"/>
+
+            <Button onAction="#handleLogin" text="Login" GridPane.columnIndex="1" GridPane.rowIndex="2" styleClass="primary-button"/>
+            <Button onAction="#handleRegister" text="Register" GridPane.columnIndex="1" GridPane.rowIndex="3" styleClass="secondary-button"/>
+        </GridPane>
+        <Label fx:id="messageLabel" styleClass="message-label" />
+    </VBox>
+</StackPane> 
